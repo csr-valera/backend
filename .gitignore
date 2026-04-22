@@ -1,0 +1,22 @@
+# .gitignore
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDEs
+.vscode/
+.idea/
+
+# Poetry
+# (poetry.lock NO se ignora, debe subirse al repo)
