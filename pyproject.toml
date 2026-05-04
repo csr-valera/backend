@@ -1,18 +1,23 @@
 [project]
 name = "backend"
 version = "0.1.0"
-description = ""
+description = "API Backend para CSR Valera"
 authors = [
-    {name = "NeilC",email = "neilccu@gmail.com"}
+    {name = "NeilC", email = "neilccu@gmail.com"}
 ]
 readme = "README.md"
 requires-python = ">=3.12"
+# Las dependencias estándar del proyecto van estrictamente aquí
 dependencies = [
     "fastapi (>=0.136.0,<0.137.0)",
     "uvicorn (>=0.45.0,<0.46.0)"
 ]
 
+[tool.poetry]
+# Desactivamos el empaquetado aislando esta regla en la sección de la herramienta
+package-mode = false
 
 [build-system]
+# Solo incluimos el motor de construcción, sin mezclar dependencias de la app
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
